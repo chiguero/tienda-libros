@@ -1,0 +1,125 @@
+<!-- carrito.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compra</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+    <!--Menu-->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Nexus</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link " aria-current="page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link " href="catalogo.html">Catalogo</a></li>
+              <li class="nav-item"><a class="nav-link active" href="carrito.html">Carrito</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+      <!--Formulario-->
+
+      <div class="container my-5">
+        <h2 class="mb-4">Carrito de Compra</h2>
+        <ul class="list-group mb-4" id="lista-carrito"></ul>
+        <h4 id="total">Total: $0.00</h4>
+        <button type="submit" class="btn btn-primary">Finalizar Compra</button>
+      </div>
+
+
+        
+      </form>
+    </div>
+  
+  <footer class=" py-3 my-4">
+    <p class="text-center text-body-secondary">© 2025 Nexus</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--para calcular libros -->
+  <script type="module">
+    import { Cart } from './js/cart.js';
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      const cart = new Cart();
+      const carrito = cart.calcularCarrito();
+
+      if (carrito.length === 0) {
+        document.getElementById("lista-carrito").innerHTML = `
+          <li class="list-group-item">El carrito está vacío.</li>`;
+        return;
+      }
+
+      // Obtener info de los libros
+      const res = await fetch("data/books.json");
+      const libros = await res.json();
+
+      const lista = document.getElementById("lista-carrito");
+      let totalCompra = 0;
+
+      carrito.forEach(item => {
+        const libro = libros.find(l => l.isbn === item.isbn);
+        if (!libro) return;
+
+        const subtotal = libro.precio * item.unidades;
+        totalCompra += subtotal;
+
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-items-center";
+
+        li.innerHTML = `
+          <div>
+            <strong>${libro.titulo}</strong><br>
+            <small>${item.unidades} x $${libro.precio} = $${subtotal.toFixed(2)}</small>
+          </div>
+          <div class="d-flex align-items-center">
+            <input type="number" class="form-control form-control-sm me-2 cantidad-input" 
+                  data-isbn="${libro.isbn}" value="${item.unidades}" min="1" style="width: 60px;">
+            <button class="btn btn-danger btn-sm eliminar-btn" data-isbn="${libro.isbn}">🗑</button>
+          </div>
+        `;
+
+        lista.appendChild(li);
+      });
+
+      document.getElementById("total").textContent = `Total: $${totalCompra.toFixed(2)}`;
+
+      // Cambiar cantidades
+      lista.addEventListener("input", e => {
+        if (e.target.classList.contains("cantidad-input")) {
+          const isbn = e.target.dataset.isbn;
+          const cantidad = parseInt(e.target.value);
+          cart.actualizarProducto(isbn, cantidad);
+          location.reload();
+        }
+      });
+
+      // Eliminar productos
+      lista.addEventListener("click", e => {
+        if (e.target.classList.contains("eliminar-btn")) {
+          const isbn = e.target.dataset.isbn;
+          cart.eliminarProducto(isbn);
+          location.reload();
+        }
+      });
+    });
+  </script>
+
+
+
+
+</body>
+</html>

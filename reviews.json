@@ -1,0 +1,57 @@
+[
+  {
+    "isbn": "9788418118036",
+    "comentario": "Muy práctico y motivador. Espero poner todo en práctica.",
+    "puntuacion": 4
+  },
+  {
+    "isbn": "9788498383625",
+    "comentario": "Una historia épica con muchos personajes. Buen libro.",
+    "puntuacion": 5
+  },
+  {
+    "isbn": "9789873693434",
+    "comentario": "Muy oscuro e inquietante. ¡Lovecraft es un must!",
+    "puntuacion": 4
+  },
+  {
+    "isbn": "9788498976250",
+    "comentario": "Una joya cultural. Me encantó su valor histórico.",
+    "puntuacion": 5
+  },
+  {
+    "isbn": "9788417963005",
+    "comentario": "Ideal para trabajar la disciplina personal.",
+    "puntuacion": 4
+  },
+  {
+    "isbn": "9788491051862",
+    "comentario": "Un clásico imprescindible. Drácula es un fiera.",
+    "puntuacion": 5
+  },
+  {
+    "isbn": "9788495642547",
+    "comentario": "Muy interesante para amantes de la mitología.",
+    "puntuacion": 4
+  },
+  {
+    "isbn": "9781234567890",
+    "comentario": "Historia cautivadora de fantasía.",
+    "puntuacion": 5
+  },
+  {
+    "isbn": "9788491467259",
+    "comentario": "Mi manga favorito, una obra de arte.",
+    "puntuacion": 5
+  },
+  {
+    "isbn": "9780307743657",
+    "comentario": "Un clásico de Stephen King que no hay que saltarse.",
+    "puntuacion": 4
+  },
+  {
+    "isbn": "9788408147057",
+    "comentario": "Buen libro de consejos, pero el cambio reside en uno mismo.",
+    "puntuacion": 4
+  }
+]

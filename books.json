@@ -1,0 +1,170 @@
+[
+  {
+    "isbn": "9788418118036",
+    "titulo": "Hábitos Atómicos",
+    "autor": "James Clear",
+    "precio": 20,
+    "categoria": "autoayuda",
+    "imagen": "img/libro1.jpg"
+  },
+  {
+    "isbn": "9788498383625",
+    "titulo": "Juego de Tronos",
+    "autor": "George R. R. Martin",
+    "precio": 25,
+    "categoria": "fantasia",
+    "imagen": "img/libro2.jpg"
+  },
+  {
+    "isbn": "9789873693434",
+    "titulo": "Cuentos de Lovecraft",
+    "autor": "Howard Phillips Lovecraft",
+    "precio": 23,
+    "categoria": "terror",
+    "imagen": "img/libro7.jpg"
+  },
+  {
+    "isbn": "9788498976250",
+    "titulo": "Popol Vuh",
+    "autor": "Varios autores",
+    "precio": 15,
+    "categoria": "mitos",
+    "imagen": "img/libro4.jpg"
+  },
+  {
+  "isbn": "9781234567890",
+  "titulo": "El Hobbit",
+  "autor": "J.R.R. Tolkien",
+  "precio": 22,
+  "categoria": "fantasia",
+  "imagen": "img/libro10.jpg"
+  },
+  {
+  "isbn": "9788417963005",
+  "titulo": "Los 7 hábitos de la gente altamente efectiva",
+  "autor": "Stephen R. Covey",
+  "precio": 22,
+  "categoria": "autoayuda",
+  "imagen": "img/libro11.jpg"
+  },
+  {
+  "isbn": "9788491051862",
+  "titulo": "Drácula",
+  "autor": "Bram Stoker",
+  "precio": 18,
+  "categoria": "terror",
+  "imagen": "img/libro12.jpg"
+  },
+  {
+  "isbn": "9788495642547",
+  "titulo": "Mitos Nórdicos",
+  "autor": "Neil Gaiman",
+  "precio": 19,
+  "categoria": "mitos",
+  "imagen": "img/libro13.jpg"
+  },
+  {
+    "isbn": "9780547928227",
+    "titulo": "El Señor de los Anillos: La Comunidad del Anillo",
+    "autor": "J.R.R. Tolkien",
+    "precio": 24,
+    "categoria": "fantasia",
+    "imagen": "img/libro14.jpg"
+  },
+  {
+    "isbn": "9788408147057",
+    "titulo": "Los secretos de la mente millonaria",
+    "autor": "T. Harv Eker",
+    "precio": 19,
+    "categoria": "autoayuda",
+    "imagen": "img/libro15.jpg"
+  },
+  {
+    "isbn": "9780307743657",
+    "titulo": "El resplandor",
+    "autor": "Stephen King",
+    "precio": 21,
+    "categoria": "terror",
+    "imagen": "img/libro16.jpg"
+  },
+  {
+    "isbn": "9788466330310",
+    "titulo": "Mitología",
+    "autor": "Edith Hamilton",
+    "precio": 20,
+    "categoria": "mitos",
+    "imagen": "img/libro17.jpg"
+  },
+  {
+    "isbn": "9788408138145",
+    "titulo": "Yo antes de ti",
+    "autor": "Joyo Moyes",
+    "precio": 10,
+    "categoria": "romance",
+    "imagen": "img/libro18.jpg"
+  },
+   {
+    "isbn": "9788408259321",
+    "titulo": "A través de mi ventana",
+    "autor": "Adriana Godoy",
+    "precio": 15,
+    "categoria": "romance",
+    "imagen": "img/libro19.jpg"
+  },
+   {
+    "isbn": "9788491050865",
+    "titulo": "Orgullo y prejuicio",
+    "autor": "Jane Austen",
+    "precio": 9,
+    "categoria": "romance",
+    "imagen": "img/libro20.jpg"
+  },
+   {
+    "isbn": "9788497596007",
+    "titulo": "El largo camino hacia la libertad",
+    "autor": "Nelson Mandela",
+    "precio": 13,
+    "categoria": "biografias",
+    "imagen": "img/libro21.jpg"
+  },
+  {
+    "isbn": "9788408182421",
+    "titulo": "Becoming, Mi historia",
+    "autor": "Michelle Obama",
+    "precio": 22,
+    "categoria": "biografias",
+    "imagen": "img/libro22.jpg"
+  },
+   {
+    "isbn": "9788401349531",
+    "titulo": "Steve Jobs",
+    "autor": "Walter Isaacson",
+    "precio": 14,
+    "categoria": "biografias",
+    "imagen": "img/libro23.jpg"
+  },
+  {
+    "isbn": "9788480636213",
+    "titulo": "Maus",
+    "autor": "Art Spiegelman",
+    "precio": 21,
+    "categoria": "comics",
+    "imagen": "img/libro24.jpg"
+  },
+   {
+    "isbn": "9788467913170",
+    "titulo": "Watchmen",
+    "autor": "Alan Moore & Dave Gibbons",
+    "precio": 36,
+    "categoria": "comics",
+    "imagen": "img/libro25.jpg"
+  },
+    {
+    "isbn": "9788491467259",
+    "titulo": "One Piece nº 01",
+    "autor": "Eiichiro Oda",
+    "precio": 9,
+    "categoria": "comics",
+    "imagen": "img/libro26.jpg"
+  }
+]
